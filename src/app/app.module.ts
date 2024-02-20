@@ -6,23 +6,25 @@ import { AppComponent } from './app.component';
 import { SetPinComponent } from './component/set-pin/set-pin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CameraComponent } from './component/camera/camera.component';
-import { MatDialogModule } from '@angular/material';
 import { PopUpComponent } from './component/pop-up/pop-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { LandignPageComponent } from './component/landign-page/landign-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SetPinComponent,
     CameraComponent,
-    PopUpComponent
+    PopUpComponent,
+    SetPinComponent,
+    LandignPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

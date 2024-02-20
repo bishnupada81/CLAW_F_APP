@@ -1,0 +1,8 @@
+.img-cap{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.main-div{
+  background-color: #71b7de;
+}

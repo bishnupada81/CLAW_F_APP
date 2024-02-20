@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
 import Swal from 'sweetalert2';
 
@@ -34,7 +34,12 @@ export class SetPinComponent implements OnInit {
   })
 
   openDialog(){
-    this.dialogRef.open(PopUpComponent)
+    this.dialogRef.open(PopUpComponent, {
+      width: '96%',
+      //height: '40%',
+      autoFocus: false,
+      restoreFocus: false,
+    })
   }
 
   public SetPinFormSubmit() {
