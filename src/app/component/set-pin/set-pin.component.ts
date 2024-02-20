@@ -10,7 +10,7 @@ import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
 })
 export class SetPinComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
@@ -31,18 +31,18 @@ export class SetPinComponent implements OnInit {
   })
 
 
-  public SetPinFormSubmit() {
+  public SetPinFormSubmit() : void {
 
     if(this.setPinForm.value){
 
       Swal.fire({
 
-        title: "Your Pin successfully set",
+        title: "Your Pin set successfully",
         confirmButtonText: "Okay",
 
       }).then((result) => {
 
-        this.router.navigateByUrl('/camera');
+        this._router.navigateByUrl('/camera');
 
       });
     }

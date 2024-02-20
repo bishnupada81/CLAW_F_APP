@@ -1,0 +1,10 @@
+.item img {
+  width: 300px;
+}
+.success-message{
+  background-color:skyblue;
+  border: 1px solid #d6e9c6;
+  color: #3c3c3c;
+  padding: 10px;
+  margin-top: 10px;
+}
