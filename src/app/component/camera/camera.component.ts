@@ -29,21 +29,29 @@ export class CameraComponent implements OnInit {
           this.imagePreviewSrc = event.target?.result;
           this.isImageSelected = true
         })
+        Swal.fire({
+          title: "Your account verification Successfully",
+          confirmButtonText: "Okay",
+        }).then((result) => {
+
+          this.router.navigateByUrl('/');
+
+        });
       }
     } else {
       this.isImageSelected = false
     }
   }
 
-  scanTheQRCode(){
-    Swal.fire({
-      title: "Your account verification Successfully",
-      confirmButtonText: "Okay",
-    }).then((result) => {
+  // scanTheQRCode(){
+  //   Swal.fire({
+  //     title: "Your account verification Successfully",
+  //     confirmButtonText: "Okay",
+  //   }).then((result) => {
 
-      this.router.navigateByUrl(' ');
+  //     this.router.navigateByUrl(' ');
 
-    });
-  }
+  //   });
+  // }
 
 }

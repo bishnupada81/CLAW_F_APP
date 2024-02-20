@@ -64,4 +64,5 @@ export class SetPinComponent implements OnInit {
   get setPin() {
     return this.setPinForm.get('setPin');
   }
+
 }
