@@ -8,3 +8,11 @@
   padding: 10px;
   margin-top: 10px;
 }
+.chooseFileClass{
+  border: 400px solid #141212;
+   width: 300px;
+   height: 300px;
+   margin-top: 150px;
+    align-items: center;
+    display:inline-block;
+}
